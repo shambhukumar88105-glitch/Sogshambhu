@@ -2,208 +2,124 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>SOG Shambhu | Sarkari Form, Job, Result</title>
-<meta name="description" content="SOG Shambhu - सरकारी ऑनलाइन फॉर्म, सरकारी नौकरी, Admit Card, Result और योजनाओं की जानकारी।">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOG Shambhu — Sarkari Online Guide</title>
+<meta name="description" content="SOG Shambhu: सरकारी नौकरी, ऑनलाइन फॉर्म, रिजल्ट, एडमिट कार्ड और सरकारी योजनाओं की जानकारी।">
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f4f7fb;color:#111}
-.top{background:#0b4f8a;color:#fff;text-align:center;padding:20px 10px}
-.logo{font-size:30px;font-weight:800}.logo span{color:#ffd21c}
-.tag{margin-top:6px;font-size:14px}
-.bar{background:#08216b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;position:sticky;top:0;z-index:10}
-.menuBtn,.searchBtn{background:none;border:0;color:#fff;font-size:20px;font-weight:700;cursor:pointer}
-.menu{display:none;background:#fff;box-shadow:0 5px 15px #0002;padding:12px;position:sticky;top:55px;z-index:9}
-.menu a{display:block;padding:12px;text-decoration:none;color:#08216b;border-bottom:1px solid #eee;font-weight:700}
-.intro{text-align:center;background:#fff;padding:20px 14px}
-.intro b{font-size:18px}.intro p{margin:8px auto;max-width:650px;font-size:15px;line-height:1.45}
-.searchbox{max-width:600px;margin:14px auto;display:flex;gap:6px}
-.searchbox input{flex:1;padding:13px;border:1px solid #aaa;border-radius:8px;font-size:16px}
-.searchbox button{padding:13px 18px;border:0;border-radius:8px;background:#1264c7;color:#fff;font-weight:700}
-.container{max-width:1050px;margin:25px auto;padding:0 12px}
-.title{text-align:center;color:#093f78;font-size:28px;margin:18px 0}
+:root{--blue:#0b3b82;--blue2:#1265c9;--navy:#071b4b;--red:#c91c2d;--green:#079447;--bg:#f3f6fb;--card:#fff;--text:#14213d;--muted:#667085;--line:#e5eaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,"Noto Sans Devanagari",sans-serif}
+a{text-decoration:none;color:inherit}
+.top{background:linear-gradient(135deg,#08285f,#0f61c4);color:#fff;padding:18px 14px 22px}
+.brand{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-size:30px;font-weight:900;letter-spacing:.2px}.logo span{color:#ffd43b}
+.badge{background:#ffffff1f;border:1px solid #ffffff40;padding:7px 10px;border-radius:20px;font-size:12px}
+.nav{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 14px #0003}
+.navin{max-width:1100px;margin:auto;display:flex;align-items:center;gap:12px;padding:11px 14px}
+.menu{border:0;background:transparent;color:#fff;font-size:17px;font-weight:800}.navlinks{display:flex;gap:7px;overflow:auto;white-space:nowrap}
+.navlinks a{padding:8px 10px;border-radius:18px;font-size:13px}.navlinks a:hover{background:#ffffff1a}
+.hero{background:#fff;padding:20px 14px 18px;text-align:center;border-bottom:1px solid var(--line)}
+.hero h1{margin:0;font-size:25px;color:var(--blue)}.hero p{max-width:700px;margin:8px auto 14px;color:#4b5565;line-height:1.45;font-size:14px}
+.search{max-width:680px;margin:auto;display:flex;gap:7px}.search input{min-width:0;flex:1;border:1px solid #cfd7e3;border-radius:12px;padding:13px 14px;font-size:15px;outline:none}.search button{border:0;background:var(--blue2);color:#fff;border-radius:12px;padding:0 18px;font-weight:800}
+.wrap{max-width:1100px;margin:auto;padding:18px 12px}.title{text-align:center;margin:7px 0 14px;font-size:24px;color:var(--blue)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.card{display:block;text-decoration:none;color:#fff;text-align:center;border-radius:10px;padding:18px 10px;min-height:118px;box-shadow:0 3px 10px #0002;transition:.2s}
-.card:hover{transform:translateY(-2px)}
-.card .icon{font-size:32px}.card h3{margin:8px 0 4px;font-size:18px}.card p{margin:0;font-size:13px}
-.c1{background:#e50914}.c2{background:#f46b0a}.c3{background:#c90bd6}.c4{background:#7b8500}.c5{background:#087fe5}.c6{background:#760000}
-.list{background:#fff;border:1px solid #ddd;border-radius:8px;overflow:hidden}
-.list a{display:flex;align-items:center;gap:10px;padding:14px 12px;border-bottom:1px solid #ddd;text-decoration:none;color:#111;font-size:17px}
-.list a:last-child{border-bottom:0}.arrow{margin-left:auto;color:#c21e55;font-size:25px}
-.section{scroll-margin-top:70px}
-.note{text-align:center;color:#666;font-size:13px;margin:12px 0}
-footer{background:#08216b;color:#fff;text-align:center;padding:25px;margin-top:35px}
-@media(max-width:700px){
- .grid{grid-template-columns:repeat(2,1fr)}
- .card{min-height:125px}.title{font-size:25px}
-}
-@media(max-width:430px){
- .grid{grid-template-columns:1fr}
- .card{min-height:105px;padding:16px}
- .logo{font-size:27px}
- .list a{font-size:16px}
-}
+.cat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 10px;text-align:center;box-shadow:0 4px 15px #17365d0c;transition:.18s}.cat:hover{transform:translateY(-2px);box-shadow:0 8px 22px #17365d18}.ico{font-size:31px}.cat h3{margin:7px 0 3px;font-size:16px}.cat p{margin:0;color:var(--muted);font-size:12px}
+.red{border-top:4px solid var(--red)}.blue{border-top:4px solid var(--blue2)}.green{border-top:4px solid var(--green)}
+.news{display:grid;grid-template-columns:1fr 1fr;gap:10px}.box{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 15px #17365d0b}
+.head{color:#fff;padding:11px 13px;font-size:18px;font-weight:900}.head.redbg{background:var(--red)}.head.bluebg{background:var(--blue)}
+ul.links{list-style:none;margin:0;padding:4px 12px}ul.links li{border-bottom:1px dashed #dce2eb}ul.links li:last-child{border:0}ul.links a{display:flex;gap:8px;padding:12px 3px;color:#073da3;font-weight:700;font-size:14px;line-height:1.25}.arrow{margin-left:auto;color:var(--red);font-size:22px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}.service{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.service a{padding:12px;border:1px solid var(--line);border-radius:11px;background:#fafcff;font-size:13px;font-weight:700}.service a:hover{background:#eef5ff}
+.notice{background:#fff8e1;border:1px solid #f3d37a;border-radius:12px;padding:12px;text-align:center;color:#775500;font-size:12px;margin-top:14px}
+footer{margin-top:25px;background:var(--navy);color:#fff;text-align:center;padding:25px 12px}footer b{font-size:20px}footer p{margin:7px 0;color:#cbd5e1;font-size:12px}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.news{grid-template-columns:1fr 1fr}.service{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.logo{font-size:27px}.badge{display:none}}
+@media(max-width:430px){.news{gap:3px}.head{font-size:16px;padding:10px 8px}.links a{font-size:13px!important}.grid{gap:8px}.cat{padding:13px 7px}.hero h1{font-size:22px}.search button{padding:0 13px}.service{grid-template-columns:1fr 1fr}}
 </style>
 
 <style>
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#b00020;border-radius:4px;overflow:hidden}
-.news-box{background:#fff;min-width:0}
-.news-head{background:#b00000;color:#fff;text-align:center;font-size:25px;font-weight:800;padding:10px}
-.news-box ul{margin:0;padding:8px 12px 14px 32px}
-.news-box li{margin:0;padding:10px 0;color:#111;font-size:17px;line-height:1.2}
-.news-box a{color:#071a9b;font-weight:700;text-decoration:none}
-.news-box a:hover{text-decoration:underline}
-@media(max-width:600px){
- .two-col{gap:2px}
- .news-head{font-size:20px}
- .news-box ul{padding-left:26px;padding-right:7px}
- .news-box li{font-size:15px;padding:9px 0}
-}
+.service a{display:flex;align-items:center;justify-content:space-between;gap:6px;cursor:pointer}
+.service a::after{content:"→";font-size:18px;color:#1265c9}
+.service a:hover{border-color:#1265c9;box-shadow:0 3px 12px #1265c91c}
 </style>
-
 </head>
 <body>
-<header class="top">
-  <div class="logo">SOG <span>Shambhu</span></div>
-  <div class="tag">सरकारी फॉर्म • नौकरी • योजना • Admit Card • Result</div>
-</header>
+<header class="top"><div class="brand"><div class="logo">SOG <span>Shambhu</span></div><div class="badge">🇮🇳 सरकारी जानकारी एक जगह</div></div></header>
 
-<div class="bar">
-  <button class="menuBtn" onclick="toggleMenu()">☰ &nbsp; Menu</button>
-  <button class="searchBtn" onclick="document.getElementById('q').focus()">⌕</button>
-</div>
-<nav id="menu" class="menu">
-  <a href="#home">होम</a><a href="#online-apply">ऑनलाइन आवेदन</a>
-  <a href="#yojana">सरकारी योजना</a><a href="#admit">Admit Card</a>
-  <a href="#results">Result</a><a href="#updates">Latest Updates</a><a href="#job-result">Jobs & Results</a>
-</nav>
+<nav class="nav"><div class="navin">
+<button class="menu" onclick="toggleNav()">☰ Menu</button>
+<div id="navlinks" class="navlinks">
+<a href="#categories">Categories</a><a href="#jobs">Jobs</a><a href="#results">Results</a><a href="#forms">Forms</a><a href="#yojana">Yojana</a>
+</div></div></nav>
 
-<section id="home" class="intro section">
-  <b>SOG Shambhu – सरकारी जानकारी एक जगह</b>
-  <p>सरकारी ऑनलाइन फॉर्म, सरकारी नौकरी, Admit Card, Result और योजनाओं के आधिकारिक लिंक आसानी से खोलें।</p>
-  <div class="searchbox">
-    <input id="q" type="search" placeholder="फॉर्म, नौकरी या योजना खोजें..." oninput="filterCards()">
-    <button onclick="filterCards()">Search</button>
-  </div>
+<section class="hero" id="home">
+<h1>सरकारी नौकरी, फॉर्म और रिजल्ट</h1>
+<p>SOG Shambhu पर सरकारी ऑनलाइन आवेदन, नई भर्ती, Admit Card, Result और सरकारी योजनाओं के जरूरी लिंक एक ही जगह पाएँ।</p>
+<div class="search"><input id="q" type="search" placeholder="🔎  नौकरी, फॉर्म या योजना खोजें..." oninput="filterAll()"><button onclick="filterAll()">खोजें</button></div>
 </section>
 
-<section class="container section">
-<h2 class="title">Important Categories</h2>
+<main>
+<section class="wrap" id="categories"><h2 class="title">⭐ महत्वपूर्ण कैटेगरी</h2>
 <div class="grid">
-<a class="card c1" href="#online-apply" data-key="online forms सरकारी ऑनलाइन आवेदन नौकरी भर्ती"><div class="icon">📋</div><h3>Online Forms</h3><p>सरकारी ऑनलाइन आवेदन</p></a>
-<a class="card c2" href="#yojana" data-key="government yojana सरकारी योजना"><div class="icon">🏛️</div><h3>Government Yojana</h3><p>सरकारी योजनाएँ</p></a>
-<a class="card c3" href="#admit" data-key="admit card परीक्षा प्रवेश पत्र"><div class="icon">🎫</div><h3>Admit Card</h3><p>परीक्षा प्रवेश पत्र</p></a>
-<a class="card c4" href="#results" data-key="result परिणाम परीक्षा"><div class="icon">📊</div><h3>Results</h3><p>परीक्षा परिणाम</p></a>
-<a class="card c5" href="#updates" data-key="latest updates नई सरकारी जानकारी"><div class="icon">📢</div><h3>Latest Updates</h3><p>नई जानकारी</p></a>
-<a class="card c6" href="#forms" data-key="aadhaar pan voter driving scholarship आधार पैन वोटर"><div class="icon">🪪</div><h3>Important Services</h3><p>जरूरी सरकारी सेवाएँ</p></a>
-</div>
-</section>
+<a class="cat red" href="#forms" data-search="online form सरकारी आवेदन"><div class="ico">📝</div><h3>Online Forms</h3><p>सरकारी ऑनलाइन आवेदन</p></a>
+<a class="cat blue" href="#jobs" data-search="jobs job नौकरी भर्ती"><div class="ico">💼</div><h3>Latest Jobs</h3><p>नई सरकारी भर्तियाँ</p></a>
+<a class="cat green" href="#results" data-search="result परिणाम"><div class="ico">📊</div><h3>Results</h3><p>परीक्षा परिणाम</p></a>
+<a class="cat blue" href="#admit" data-search="admit card प्रवेश पत्र"><div class="ico">🎫</div><h3>Admit Card</h3><p>लेटेस्ट एडमिट कार्ड</p></a>
+<a class="cat red" href="#yojana" data-search="yojana योजना"><div class="ico">🏛️</div><h3>Government Yojana</h3><p>सरकारी योजनाएँ</p></a>
+<a class="cat green" href="#services" data-search="aadhaar pan voter digilocker आधार पैन"><div class="ico">🪪</div><h3>Important Services</h3><p>जरूरी सरकारी सेवाएँ</p></a>
+</div></section>
 
-<section id="online-apply" class="container section">
+<section class="wrap" id="jobs"><div class="news"><div class="box"><div class="head bluebg">💼 Latest Jobs</div><ul class="links">
+<li><a href="https://www.ssc.gov.in/" target="_blank">SSC Latest Recruitment <span class="arrow">›</span></a></li>
+<li><a href="https://www.upsc.gov.in/" target="_blank">UPSC Latest Recruitment <span class="arrow">›</span></a></li>
+<li><a href="https://www.rrbapply.gov.in/" target="_blank">Railway Recruitment <span class="arrow">›</span></a></li>
+<li><a href="https://www.ncs.gov.in/" target="_blank">National Career Service Jobs <span class="arrow">›</span></a></li>
+<li><a href="https://exams.nta.ac.in/" target="_blank">NTA Exams / Forms <span class="arrow">›</span></a></li>
+</ul></div>
+<div class="box" id="results"><div class="head redbg">📊 Results</div><ul class="links">
+<li><a href="https://www.ssc.gov.in/" target="_blank">SSC Results <span class="arrow">›</span></a></li>
+<li><a href="https://www.upsc.gov.in/" target="_blank">UPSC Results <span class="arrow">›</span></a></li>
+<li><a href="https://www.rrbcdg.gov.in/" target="_blank">Railway Results <span class="arrow">›</span></a></li>
+<li><a href="https://exams.nta.ac.in/" target="_blank">NTA Results <span class="arrow">›</span></a></li>
+<li><a href="https://www.ncs.gov.in/" target="_blank">Career Updates <span class="arrow">›</span></a></li>
+</ul></div></div></section>
+
+
+<section class="wrap" id="forms">
 <h2 class="title">📝 सरकारी ऑनलाइन आवेदन</h2>
-<div class="list">
-<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC भर्ती / ऑनलाइन आवेदन <span class="arrow">›</span></a>
-<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC भर्ती / आवेदन <span class="arrow">›</span></a>
-<a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">सरकारी नौकरी खोजें – NCS <span class="arrow">›</span></a>
-<a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">रेलवे भर्ती आवेदन <span class="arrow">›</span></a>
-<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA परीक्षा / आवेदन <span class="arrow">›</span></a>
-<a href="https://scholarships.gov.in/" target="_blank" rel="noopener">Scholarship आवेदन <span class="arrow">›</span></a>
+<div class="panel">
+<div class="service">
+<a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Online Form ↗</a>
+<a href="https://upsconline.nic.in/" target="_blank" rel="noopener">UPSC Online Form ↗</a>
+<a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway Online Form ↗</a>
+<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Online Form ↗</a>
+<a href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS Online Form ↗</a>
+<a href="https://www.joinindianarmy.nic.in/" target="_blank" rel="noopener">Indian Army Form ↗</a>
+<a href="https://agniveer.navya.gov.in/" target="_blank" rel="noopener">Agniveer Form ↗</a>
+<a href="https://www.joinindiannavy.gov.in/" target="_blank" rel="noopener">Indian Navy Form ↗</a>
+<a href="https://indiancoastguard.gov.in/" target="_blank" rel="noopener">Coast Guard ↗</a>
+<a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">NCS Job Form ↗</a>
+<a href="https://scholarships.gov.in/" target="_blank" rel="noopener">Scholarship Form ↗</a>
+<a href="https://pmkisan.gov.in/" target="_blank" rel="noopener">PM-KISAN ↗</a>
 </div>
-<p class="note">आवेदन से पहले पात्रता, शुल्क और अंतिम तिथि संबंधित आधिकारिक वेबसाइट पर जाँचें।</p>
-</section>
-
-<section id="forms" class="container section">
-<h2 class="title">🇮🇳 जरूरी सरकारी सेवाएँ</h2>
-<div class="list">
-<a href="https://uidai.gov.in/en/" target="_blank" rel="noopener">आधार कार्ड – UIDAI <span class="arrow">›</span></a>
-<a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener">PAN / Income Tax <span class="arrow">›</span></a>
-<a href="https://voters.eci.gov.in/" target="_blank" rel="noopener">वोटर कार्ड – ECI <span class="arrow">›</span></a>
-<a href="https://parivahan.gov.in/" target="_blank" rel="noopener">ड्राइविंग लाइसेंस – Parivahan <span class="arrow">›</span></a>
-<a href="https://scholarships.gov.in/" target="_blank" rel="noopener">National Scholarship Portal <span class="arrow">›</span></a>
-<a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener">DigiLocker <span class="arrow">›</span></a>
+<div class="notice">⚠️ हर कार्ड अलग लिंक है। आवेदन करने से पहले संबंधित विभाग की आधिकारिक वेबसाइट पर पात्रता, शुल्क और अंतिम तिथि जरूर जाँचें।</div>
 </div>
 </section>
 
-<section id="yojana" class="container section">
-<h2 class="title">🏛️ सरकारी योजनाएँ</h2>
-<div class="list">
-<a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">MyScheme – योजनाएँ खोजें <span class="arrow">›</span></a>
-<a href="https://pmkisan.gov.in/" target="_blank" rel="noopener">PM-KISAN <span class="arrow">›</span></a>
-<a href="https://pmaymis.gov.in/" target="_blank" rel="noopener">PM Awas Yojana <span class="arrow">›</span></a>
-<a href="https://www.india.gov.in/" target="_blank" rel="noopener">भारत सरकार का National Portal <span class="arrow">›</span></a>
-</div>
-</section>
+<section class="wrap" id="admit"><h2 class="title">🎫 Admit Card</h2><div class="panel"><div class="service">
+<a href="https://www.ssc.gov.in/" target="_blank">SSC Admit Card</a><a href="https://www.upsc.gov.in/" target="_blank">UPSC परीक्षा</a><a href="https://www.rrbcdg.gov.in/" target="_blank">Railway परीक्षा</a><a href="https://exams.nta.ac.in/" target="_blank">NTA परीक्षा</a>
+</div></div></section>
 
-<section id="admit" class="container section">
-<h2 class="title">🎫 Admit Card</h2>
-<div class="list">
-<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Admit Card / परीक्षा <span class="arrow">›</span></a>
-<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC परीक्षा जानकारी <span class="arrow">›</span></a>
-<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA परीक्षा जानकारी <span class="arrow">›</span></a>
-<a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway परीक्षा जानकारी <span class="arrow">›</span></a>
-</div>
-</section>
+<section class="wrap" id="yojana"><h2 class="title">🏛️ सरकारी योजनाएँ</h2><div class="panel"><div class="service">
+<a href="https://www.myscheme.gov.in/" target="_blank">MyScheme</a><a href="https://pmkisan.gov.in/" target="_blank">PM-KISAN</a><a href="https://pmaymis.gov.in/" target="_blank">PM Awas Yojana</a><a href="https://www.india.gov.in/" target="_blank">India.gov.in</a>
+</div></div></section>
 
-<section id="results" class="container section">
-<h2 class="title">📊 Results</h2>
-<div class="list">
-<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Result <span class="arrow">›</span></a>
-<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Result <span class="arrow">›</span></a>
-<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Result / परीक्षा <span class="arrow">›</span></a>
-<a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Result <span class="arrow">›</span></a>
-</div>
-</section>
+<section class="wrap" id="services"><h2 class="title">🪪 जरूरी सरकारी सेवाएँ</h2><div class="panel"><div class="service">
+<a href="https://uidai.gov.in/en/" target="_blank">आधार – UIDAI</a><a href="https://www.incometax.gov.in/iec/foportal/" target="_blank">PAN / Income Tax</a><a href="https://voters.eci.gov.in/" target="_blank">Voter Card</a><a href="https://parivahan.gov.in/" target="_blank">Driving Licence</a><a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker</a><a href="https://scholarships.gov.in/" target="_blank">Scholarship</a>
+</div></div></section>
+</main>
 
-<section id="updates" class="container section">
-<h2 class="title">📢 Latest Updates</h2>
-<div class="list">
-<a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">नई सरकारी नौकरी – NCS <span class="arrow">›</span></a>
-<a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">नई सरकारी योजनाएँ – MyScheme <span class="arrow">›</span></a>
-<a href="https://www.india.gov.in/" target="_blank" rel="noopener">सरकारी सेवाओं की नई जानकारी <span class="arrow">›</span></a>
-</div>
-</section>
-
-
-<section id="job-result" class="container section">
-<h2 class="title">📢 Latest Job & Result Updates</h2>
-<div class="two-col">
-  <div class="news-box">
-    <div class="news-head">Results</div>
-    <ul>
-      <li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Result & परीक्षा अपडेट 2026</a></li>
-      <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Result / परीक्षा अपडेट</a></li>
-      <li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">RRB Railway Result & Updates</a></li>
-      <li><a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Result / परीक्षा अपडेट</a></li>
-      <li><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">सरकारी नौकरी Result Updates</a></li>
-    </ul>
-  </div>
-  <div class="news-box">
-    <div class="news-head">Latest Jobs</div>
-    <ul>
-      <li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Latest Online Forms</a></li>
-      <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Latest Recruitment</a></li>
-      <li><a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway Latest Recruitment</a></li>
-      <li><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service Jobs</a></li>
-      <li><a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Latest Exams / Forms</a></li>
-    </ul>
-  </div>
-</div>
-<p class="note">लिंक खोलने पर संबंधित आधिकारिक वेबसाइट खुलेगी। आवेदन की अंतिम तिथि और पात्रता जरूर जाँचें।</p>
-</section>
-
-<footer><h3>SOG Shambhu</h3><p>Online Guide | Forms | Jobs | Yojana | Admit Card | Result</p><p>© 2026 SOG Shambhu</p></footer>
-
+<footer><b>SOG Shambhu</b><p>Online Guide • Government Forms • Jobs • Results • Yojana</p><p>© 2026 SOG Shambhu</p></footer>
 <script>
-function toggleMenu(){
-  const m=document.getElementById('menu');
-  m.style.display=(m.style.display==='block')?'none':'block';
-}
-function filterCards(){
-  const q=document.getElementById('q').value.toLowerCase().trim();
-  document.querySelectorAll('.card').forEach(c=>{
-    c.style.display=(!q || c.innerText.toLowerCase().includes(q) || (c.dataset.key||'').toLowerCase().includes(q))?'block':'none';
-  });
-}
+function toggleNav(){let n=document.getElementById('navlinks');n.style.display=n.style.display==='flex'?'none':'flex';}
+function filterAll(){let q=document.getElementById('q').value.toLowerCase().trim();document.querySelectorAll('[data-search]').forEach(x=>x.style.display=!q||x.innerText.toLowerCase().includes(q)||x.dataset.search.includes(q)?'block':'none');}
 </script>
-</body>
-</html>
+</body></html>
