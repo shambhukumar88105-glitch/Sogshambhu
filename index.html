@@ -44,6 +44,23 @@ footer{background:#08216b;color:#fff;text-align:center;padding:25px;margin-top:3
  .list a{font-size:16px}
 }
 </style>
+
+<style>
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#b00020;border-radius:4px;overflow:hidden}
+.news-box{background:#fff;min-width:0}
+.news-head{background:#b00000;color:#fff;text-align:center;font-size:25px;font-weight:800;padding:10px}
+.news-box ul{margin:0;padding:8px 12px 14px 32px}
+.news-box li{margin:0;padding:10px 0;color:#111;font-size:17px;line-height:1.2}
+.news-box a{color:#071a9b;font-weight:700;text-decoration:none}
+.news-box a:hover{text-decoration:underline}
+@media(max-width:600px){
+ .two-col{gap:2px}
+ .news-head{font-size:20px}
+ .news-box ul{padding-left:26px;padding-right:7px}
+ .news-box li{font-size:15px;padding:9px 0}
+}
+</style>
+
 </head>
 <body>
 <header class="top">
@@ -58,7 +75,7 @@ footer{background:#08216b;color:#fff;text-align:center;padding:25px;margin-top:3
 <nav id="menu" class="menu">
   <a href="#home">होम</a><a href="#online-apply">ऑनलाइन आवेदन</a>
   <a href="#yojana">सरकारी योजना</a><a href="#admit">Admit Card</a>
-  <a href="#results">Result</a><a href="#updates">Latest Updates</a>
+  <a href="#results">Result</a><a href="#updates">Latest Updates</a><a href="#job-result">Jobs & Results</a>
 </nav>
 
 <section id="home" class="intro section">
@@ -144,6 +161,34 @@ footer{background:#08216b;color:#fff;text-align:center;padding:25px;margin-top:3
 <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">नई सरकारी योजनाएँ – MyScheme <span class="arrow">›</span></a>
 <a href="https://www.india.gov.in/" target="_blank" rel="noopener">सरकारी सेवाओं की नई जानकारी <span class="arrow">›</span></a>
 </div>
+</section>
+
+
+<section id="job-result" class="container section">
+<h2 class="title">📢 Latest Job & Result Updates</h2>
+<div class="two-col">
+  <div class="news-box">
+    <div class="news-head">Results</div>
+    <ul>
+      <li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Result & परीक्षा अपडेट 2026</a></li>
+      <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Result / परीक्षा अपडेट</a></li>
+      <li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">RRB Railway Result & Updates</a></li>
+      <li><a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Result / परीक्षा अपडेट</a></li>
+      <li><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">सरकारी नौकरी Result Updates</a></li>
+    </ul>
+  </div>
+  <div class="news-box">
+    <div class="news-head">Latest Jobs</div>
+    <ul>
+      <li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Latest Online Forms</a></li>
+      <li><a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Latest Recruitment</a></li>
+      <li><a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway Latest Recruitment</a></li>
+      <li><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service Jobs</a></li>
+      <li><a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Latest Exams / Forms</a></li>
+    </ul>
+  </div>
+</div>
+<p class="note">लिंक खोलने पर संबंधित आधिकारिक वेबसाइट खुलेगी। आवेदन की अंतिम तिथि और पात्रता जरूर जाँचें।</p>
 </section>
 
 <footer><h3>SOG Shambhu</h3><p>Online Guide | Forms | Jobs | Yojana | Admit Card | Result</p><p>© 2026 SOG Shambhu</p></footer>

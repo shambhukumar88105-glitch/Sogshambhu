@@ -1,1 +1,1 @@
-SOG Shambhu modern mobile-friendly website. Upload index.html to the GitHub Pages repository root.
+SOG Shambhu updated design with two-column Latest Jobs and Results section. Upload index.html to GitHub Pages root.
