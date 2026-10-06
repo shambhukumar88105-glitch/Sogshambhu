@@ -2,140 +2,163 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SOG Shambhu | Online Guide</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SOG Shambhu | Sarkari Form, Job, Result</title>
+<meta name="description" content="SOG Shambhu - सरकारी ऑनलाइन फॉर्म, सरकारी नौकरी, Admit Card, Result और योजनाओं की जानकारी।">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#222}
-header{background:linear-gradient(135deg,#063b78,#087fbd);color:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:28px;font-weight:800}.logo span{color:#ffd43b}
-nav a{color:#fff;text-decoration:none;margin:5px 8px;font-size:14px}
-.hero{text-align:center;background:#fff;padding:45px 18px}.hero h1{color:#063b78;font-size:34px;margin:5px}.hero p{color:#555}
-.search{max-width:650px;margin:25px auto;display:flex}.search input{flex:1;padding:15px;border:1px solid #ccc;border-radius:8px 0 0 8px;font-size:16px}.search button{border:0;padding:15px 22px;background:#ff9800;color:#fff;border-radius:0 8px 8px 0;font-weight:bold}
-.container{max-width:1100px;margin:30px auto;padding:0 15px}.title{text-align:center;color:#063b78;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:15px}.card{background:#fff;color:inherit;text-decoration:none;display:block;transition:transform .2s,box-shadow .2s;padding:24px 12px;text-align:center;border-radius:12px;box-shadow:0 3px 12px #00000012}.card:hover{transform:translateY(-3px);box-shadow:0 7px 18px #00000018}.icon{font-size:35px}.card h3{color:#063b78}
-.latest{background:#fff;border-radius:12px;box-shadow:0 3px 12px #00000012;overflow:hidden}.latest div{padding:15px;border-bottom:1px solid #eee}.latest a{color:#075ea8;text-decoration:none}
-footer{margin-top:45px;background:#062d58;color:#fff;text-align:center;padding:25px}
-@media(max-width:600px){header{justify-content:center;text-align:center;gap:12px}.hero h1{font-size:27px}nav{line-height:28px}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f4f7fb;color:#111}
+.top{background:#0b4f8a;color:#fff;text-align:center;padding:20px 10px}
+.logo{font-size:30px;font-weight:800}.logo span{color:#ffd21c}
+.tag{margin-top:6px;font-size:14px}
+.bar{background:#08216b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;position:sticky;top:0;z-index:10}
+.menuBtn,.searchBtn{background:none;border:0;color:#fff;font-size:20px;font-weight:700;cursor:pointer}
+.menu{display:none;background:#fff;box-shadow:0 5px 15px #0002;padding:12px;position:sticky;top:55px;z-index:9}
+.menu a{display:block;padding:12px;text-decoration:none;color:#08216b;border-bottom:1px solid #eee;font-weight:700}
+.intro{text-align:center;background:#fff;padding:20px 14px}
+.intro b{font-size:18px}.intro p{margin:8px auto;max-width:650px;font-size:15px;line-height:1.45}
+.searchbox{max-width:600px;margin:14px auto;display:flex;gap:6px}
+.searchbox input{flex:1;padding:13px;border:1px solid #aaa;border-radius:8px;font-size:16px}
+.searchbox button{padding:13px 18px;border:0;border-radius:8px;background:#1264c7;color:#fff;font-weight:700}
+.container{max-width:1050px;margin:25px auto;padding:0 12px}
+.title{text-align:center;color:#093f78;font-size:28px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card{display:block;text-decoration:none;color:#fff;text-align:center;border-radius:10px;padding:18px 10px;min-height:118px;box-shadow:0 3px 10px #0002;transition:.2s}
+.card:hover{transform:translateY(-2px)}
+.card .icon{font-size:32px}.card h3{margin:8px 0 4px;font-size:18px}.card p{margin:0;font-size:13px}
+.c1{background:#e50914}.c2{background:#f46b0a}.c3{background:#c90bd6}.c4{background:#7b8500}.c5{background:#087fe5}.c6{background:#760000}
+.list{background:#fff;border:1px solid #ddd;border-radius:8px;overflow:hidden}
+.list a{display:flex;align-items:center;gap:10px;padding:14px 12px;border-bottom:1px solid #ddd;text-decoration:none;color:#111;font-size:17px}
+.list a:last-child{border-bottom:0}.arrow{margin-left:auto;color:#c21e55;font-size:25px}
+.section{scroll-margin-top:70px}
+.note{text-align:center;color:#666;font-size:13px;margin:12px 0}
+footer{background:#08216b;color:#fff;text-align:center;padding:25px;margin-top:35px}
+@media(max-width:700px){
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .card{min-height:125px}.title{font-size:25px}
+}
+@media(max-width:430px){
+ .grid{grid-template-columns:1fr}
+ .card{min-height:105px;padding:16px}
+ .logo{font-size:27px}
+ .list a{font-size:16px}
+}
 </style>
 </head>
 <body>
-<header><div class="logo">SOG <span>Shambhu</span></div>
-<nav><a href="#">Home</a><a href="#forms">Forms</a><a href="#online-apply">Online Apply</a><a href="#yojana">Yojana</a><a href="#admit">Admit Card</a><a href="#results">Result</a><a href="#">Contact</a></nav></header>
-<section class="hero"><h1>Welcome to SOG Shambhu</h1><p>सरकारी फॉर्म, योजना, Admit Card और Result की जानकारी एक जगह</p>
-<div class="search"><input id="search" placeholder="फॉर्म या योजना खोजें..."><button onclick="searchSite()">Search</button></div></section>
-<section class="container"><h2 class="title">Important Categories</h2><div class="grid">
-<a class="card" href="#online-apply"><div class="icon">📋</div><h3>Online Forms</h3><p>सरकारी ऑनलाइन आवेदन</p></a>
-<a class="card" href="#yojana"><div class="icon">🏛️</div><h3>Government Yojana</h3><p>सरकारी योजनाओं की जानकारी</p></a>
-<a class="card" href="#admit"><div class="icon">🎫</div><h3>Admit Card</h3><p>Latest Admit Card</p></a>
-<a class="card" href="#results"><div class="icon">📊</div><h3>Results</h3><p>Latest Exam Results</p></a>
-<a class="card" href="#updates"><div class="icon">📢</div><h3>Latest Updates</h3><p>नई सरकारी जानकारी</p></a>
-</div></section>
+<header class="top">
+  <div class="logo">SOG <span>Shambhu</span></div>
+  <div class="tag">सरकारी फॉर्म • नौकरी • योजना • Admit Card • Result</div>
+</header>
 
-<section class="container" id="forms">
-<h2 class="title">🇮🇳 सरकारी फॉर्म और जरूरी लिंक</h2>
-<div class="grid">
-<a class="card" href="https://uidai.gov.in/en/" target="_blank" rel="noopener">
-<div class="icon">🪪</div><h3>आधार कार्ड</h3><p>UIDAI की आधिकारिक वेबसाइट</p>
-</a>
-<a class="card" href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener">
-<div class="icon">💳</div><h3>PAN / Income Tax</h3><p>Income Tax की आधिकारिक वेबसाइट</p>
-</a>
-<a class="card" href="https://voters.eci.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🗳️</div><h3>वोटर कार्ड</h3><p>Election Commission का पोर्टल</p>
-</a>
-<a class="card" href="https://parivahan.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🚗</div><h3>ड्राइविंग लाइसेंस</h3><p>Parivahan की आधिकारिक वेबसाइट</p>
-</a>
-<a class="card" href="https://scholarships.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🎓</div><h3>Scholarship</h3><p>National Scholarship Portal</p>
-</a>
-<a class="card" href="https://www.india.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🏛️</div><h3>भारत सरकार पोर्टल</h3><p>सरकारी सेवाओं की जानकारी</p>
-</a>
+<div class="bar">
+  <button class="menuBtn" onclick="toggleMenu()">☰ &nbsp; Menu</button>
+  <button class="searchBtn" onclick="document.getElementById('q').focus()">⌕</button>
 </div>
-<p style="text-align:center;margin-top:18px;color:#666;font-size:13px">
-सभी लिंक संबंधित सरकारी पोर्टल पर खुलेंगे। आवेदन करने से पहले वेबसाइट का पता जरूर जांचें।
-</p>
+<nav id="menu" class="menu">
+  <a href="#home">होम</a><a href="#online-apply">ऑनलाइन आवेदन</a>
+  <a href="#yojana">सरकारी योजना</a><a href="#admit">Admit Card</a>
+  <a href="#results">Result</a><a href="#updates">Latest Updates</a>
+</nav>
+
+<section id="home" class="intro section">
+  <b>SOG Shambhu – सरकारी जानकारी एक जगह</b>
+  <p>सरकारी ऑनलाइन फॉर्म, सरकारी नौकरी, Admit Card, Result और योजनाओं के आधिकारिक लिंक आसानी से खोलें।</p>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="फॉर्म, नौकरी या योजना खोजें..." oninput="filterCards()">
+    <button onclick="filterCards()">Search</button>
+  </div>
 </section>
 
+<section class="container section">
+<h2 class="title">Important Categories</h2>
+<div class="grid">
+<a class="card c1" href="#online-apply" data-key="online forms सरकारी ऑनलाइन आवेदन नौकरी भर्ती"><div class="icon">📋</div><h3>Online Forms</h3><p>सरकारी ऑनलाइन आवेदन</p></a>
+<a class="card c2" href="#yojana" data-key="government yojana सरकारी योजना"><div class="icon">🏛️</div><h3>Government Yojana</h3><p>सरकारी योजनाएँ</p></a>
+<a class="card c3" href="#admit" data-key="admit card परीक्षा प्रवेश पत्र"><div class="icon">🎫</div><h3>Admit Card</h3><p>परीक्षा प्रवेश पत्र</p></a>
+<a class="card c4" href="#results" data-key="result परिणाम परीक्षा"><div class="icon">📊</div><h3>Results</h3><p>परीक्षा परिणाम</p></a>
+<a class="card c5" href="#updates" data-key="latest updates नई सरकारी जानकारी"><div class="icon">📢</div><h3>Latest Updates</h3><p>नई जानकारी</p></a>
+<a class="card c6" href="#forms" data-key="aadhaar pan voter driving scholarship आधार पैन वोटर"><div class="icon">🪪</div><h3>Important Services</h3><p>जरूरी सरकारी सेवाएँ</p></a>
+</div>
+</section>
 
-<section class="container" id="online-apply">
+<section id="online-apply" class="container section">
 <h2 class="title">📝 सरकारी ऑनलाइन आवेदन</h2>
-<div class="grid">
-<a class="card" href="https://www.ssc.gov.in/" target="_blank" rel="noopener">
-<div class="icon">💼</div><h3>SSC भर्ती</h3><p>Staff Selection Commission</p>
-</a>
-<a class="card" href="https://www.upsc.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🏛️</div><h3>UPSC भर्ती</h3><p>संघ लोक सेवा आयोग</p>
-</a>
-<a class="card" href="https://www.ncs.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🔎</div><h3>सरकारी नौकरी खोजें</h3><p>National Career Service</p>
-</a>
-<a class="card" href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🚆</div><h3>रेलवे भर्ती आवेदन</h3><p>Railway Recruitment application portal</p>
-</a>
-<a class="card" href="https://exams.nta.ac.in/" target="_blank" rel="noopener">
-<div class="icon">🎓</div><h3>NTA परीक्षा</h3><p>राष्ट्रीय परीक्षा एजेंसी</p>
-</a>
-<a class="card" href="https://scholarships.gov.in/" target="_blank" rel="noopener">
-<div class="icon">📚</div><h3>स्कॉलरशिप आवेदन</h3><p>National Scholarship Portal</p>
-</a>
-<a class="card" href="https://www.india.gov.in/" target="_blank" rel="noopener">
-<div class="icon">🇮🇳</div><h3>सरकारी सेवाएँ</h3><p>National Portal of India</p>
-</a>
-<a class="card" href="https://www.digilocker.gov.in/" target="_blank" rel="noopener">
-<div class="icon">📂</div><h3>DigiLocker</h3><p>डिजिटल दस्तावेज़ सेवाएँ</p>
-</a>
+<div class="list">
+<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC भर्ती / ऑनलाइन आवेदन <span class="arrow">›</span></a>
+<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC भर्ती / आवेदन <span class="arrow">›</span></a>
+<a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">सरकारी नौकरी खोजें – NCS <span class="arrow">›</span></a>
+<a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">रेलवे भर्ती आवेदन <span class="arrow">›</span></a>
+<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA परीक्षा / आवेदन <span class="arrow">›</span></a>
+<a href="https://scholarships.gov.in/" target="_blank" rel="noopener">Scholarship आवेदन <span class="arrow">›</span></a>
 </div>
-<p style="text-align:center;margin-top:18px;color:#666;font-size:13px">
-आवेदन करने से पहले पात्रता, अंतिम तिथि और शुल्क की जानकारी संबंधित आधिकारिक वेबसाइट पर जरूर जांचें।
-</p>
+<p class="note">आवेदन से पहले पात्रता, शुल्क और अंतिम तिथि संबंधित आधिकारिक वेबसाइट पर जाँचें।</p>
 </section>
 
-<section class="container"><h2 class="title">Latest Updates</h2><div class="latest">
-<div>🔥 <a href="#">नई सरकारी भर्ती का ऑनलाइन आवेदन शुरू</a></div>
-<div>📢 <a href="#">सरकारी योजना के लिए आवेदन करें</a></div>
-<div>🎫 <a href="#">नई परीक्षा का Admit Card जारी</a></div>
-<div>📊 <a href="#">नई परीक्षा का Result जारी</a></div>
-</div></section>
+<section id="forms" class="container section">
+<h2 class="title">🇮🇳 जरूरी सरकारी सेवाएँ</h2>
+<div class="list">
+<a href="https://uidai.gov.in/en/" target="_blank" rel="noopener">आधार कार्ड – UIDAI <span class="arrow">›</span></a>
+<a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener">PAN / Income Tax <span class="arrow">›</span></a>
+<a href="https://voters.eci.gov.in/" target="_blank" rel="noopener">वोटर कार्ड – ECI <span class="arrow">›</span></a>
+<a href="https://parivahan.gov.in/" target="_blank" rel="noopener">ड्राइविंग लाइसेंस – Parivahan <span class="arrow">›</span></a>
+<a href="https://scholarships.gov.in/" target="_blank" rel="noopener">National Scholarship Portal <span class="arrow">›</span></a>
+<a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener">DigiLocker <span class="arrow">›</span></a>
+</div>
+</section>
 
-<section class="container" id="yojana">
+<section id="yojana" class="container section">
 <h2 class="title">🏛️ सरकारी योजनाएँ</h2>
-<div class="grid">
-<a class="card" href="https://www.myscheme.gov.in/" target="_blank" rel="noopener"><div class="icon">🇮🇳</div><h3>MyScheme</h3><p>सरकारी योजनाएँ खोजें</p></a>
-<a class="card" href="https://pmkisan.gov.in/" target="_blank" rel="noopener"><div class="icon">🌾</div><h3>PM-KISAN</h3><p>किसान योजना</p></a>
-<a class="card" href="https://pmaymis.gov.in/" target="_blank" rel="noopener"><div class="icon">🏠</div><h3>PM Awas Yojana</h3><p>आवास योजना</p></a>
-<a class="card" href="https://www.indiapost.gov.in/" target="_blank" rel="noopener"><div class="icon">📮</div><h3>India Post</h3><p>डाक विभाग की सेवाएँ</p></a>
-</div></section>
+<div class="list">
+<a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">MyScheme – योजनाएँ खोजें <span class="arrow">›</span></a>
+<a href="https://pmkisan.gov.in/" target="_blank" rel="noopener">PM-KISAN <span class="arrow">›</span></a>
+<a href="https://pmaymis.gov.in/" target="_blank" rel="noopener">PM Awas Yojana <span class="arrow">›</span></a>
+<a href="https://www.india.gov.in/" target="_blank" rel="noopener">भारत सरकार का National Portal <span class="arrow">›</span></a>
+</div>
+</section>
 
-<section class="container" id="admit">
+<section id="admit" class="container section">
 <h2 class="title">🎫 Admit Card</h2>
-<div class="grid">
-<a class="card" href="https://www.ssc.gov.in/" target="_blank" rel="noopener"><div class="icon">📄</div><h3>SSC</h3><p>Admit Card / परीक्षा जानकारी</p></a>
-<a class="card" href="https://www.upsc.gov.in/" target="_blank" rel="noopener"><div class="icon">📄</div><h3>UPSC</h3><p>परीक्षा और Admit Card</p></a>
-<a class="card" href="https://exams.nta.ac.in/" target="_blank" rel="noopener"><div class="icon">🎓</div><h3>NTA Exams</h3><p>प्रवेश परीक्षा जानकारी</p></a>
-<a class="card" href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener"><div class="icon">🚆</div><h3>Railway</h3><p>रेलवे परीक्षा जानकारी</p></a>
-</div></section>
+<div class="list">
+<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Admit Card / परीक्षा <span class="arrow">›</span></a>
+<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC परीक्षा जानकारी <span class="arrow">›</span></a>
+<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA परीक्षा जानकारी <span class="arrow">›</span></a>
+<a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway परीक्षा जानकारी <span class="arrow">›</span></a>
+</div>
+</section>
 
-<section class="container" id="results">
-<h2 class="title">📊 सरकारी परीक्षा Results</h2>
-<div class="grid">
-<a class="card" href="https://www.ssc.gov.in/" target="_blank" rel="noopener"><div class="icon">📊</div><h3>SSC Result</h3><p>SSC की आधिकारिक वेबसाइट</p></a>
-<a class="card" href="https://www.upsc.gov.in/" target="_blank" rel="noopener"><div class="icon">📊</div><h3>UPSC Result</h3><p>UPSC की आधिकारिक वेबसाइट</p></a>
-<a class="card" href="https://exams.nta.ac.in/" target="_blank" rel="noopener"><div class="icon">📊</div><h3>NTA Result</h3><p>प्रवेश परीक्षाओं की जानकारी</p></a>
-<a class="card" href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener"><div class="icon">🚆</div><h3>Railway Result</h3><p>रेलवे की आधिकारिक वेबसाइट</p></a>
-</div></section>
+<section id="results" class="container section">
+<h2 class="title">📊 Results</h2>
+<div class="list">
+<a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Result <span class="arrow">›</span></a>
+<a href="https://www.upsc.gov.in/" target="_blank" rel="noopener">UPSC Result <span class="arrow">›</span></a>
+<a href="https://exams.nta.ac.in/" target="_blank" rel="noopener">NTA Result / परीक्षा <span class="arrow">›</span></a>
+<a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Result <span class="arrow">›</span></a>
+</div>
+</section>
 
-<section class="container" id="updates">
+<section id="updates" class="container section">
 <h2 class="title">📢 Latest Updates</h2>
-<div class="latest">
-<div><strong>सरकारी नौकरी:</strong> <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service पर देखें</a></div>
-<div><strong>सरकारी योजनाएँ:</strong> <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">MyScheme पर देखें</a></div>
-<div><strong>सभी सरकारी सेवाएँ:</strong> <a href="https://www.india.gov.in/" target="_blank" rel="noopener">India.gov.in पर देखें</a></div>
-</div></section>
+<div class="list">
+<a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">नई सरकारी नौकरी – NCS <span class="arrow">›</span></a>
+<a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">नई सरकारी योजनाएँ – MyScheme <span class="arrow">›</span></a>
+<a href="https://www.india.gov.in/" target="_blank" rel="noopener">सरकारी सेवाओं की नई जानकारी <span class="arrow">›</span></a>
+</div>
+</section>
 
-<footer><h3>SOG Shambhu</h3><p>Online Guide | Forms | Yojana | Admit Card | Result</p><p>© 2026 SOG Shambhu</p></footer>
+<footer><h3>SOG Shambhu</h3><p>Online Guide | Forms | Jobs | Yojana | Admit Card | Result</p><p>© 2026 SOG Shambhu</p></footer>
+
 <script>
-function searchSite(){let q=document.getElementById('search').value.trim();if(q) alert('आपने खोजा: '+q+'\nSearch system बाद में database से जोड़ा जा सकता है।');else alert('कृपया कुछ लिखकर Search करें।');}
+function toggleMenu(){
+  const m=document.getElementById('menu');
+  m.style.display=(m.style.display==='block')?'none':'block';
+}
+function filterCards(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  document.querySelectorAll('.card').forEach(c=>{
+    c.style.display=(!q || c.innerText.toLowerCase().includes(q) || (c.dataset.key||'').toLowerCase().includes(q))?'block':'none';
+  });
+}
 </script>
-</body></html>
+</body>
+</html>
