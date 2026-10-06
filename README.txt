@@ -1,0 +1,1 @@
+SOG Shambhu static home page. Open index.html in Chrome to preview. Later this can be connected to a domain and hosting.
