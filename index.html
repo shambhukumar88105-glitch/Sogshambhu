@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOG Shambhu | Online Guide</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#222}
+header{background:linear-gradient(135deg,#063b78,#087fbd);color:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:28px;font-weight:800}.logo span{color:#ffd43b}
+nav a{color:#fff;text-decoration:none;margin:5px 8px;font-size:14px}
+.hero{text-align:center;background:#fff;padding:45px 18px}.hero h1{color:#063b78;font-size:34px;margin:5px}.hero p{color:#555}
+.search{max-width:650px;margin:25px auto;display:flex}.search input{flex:1;padding:15px;border:1px solid #ccc;border-radius:8px 0 0 8px;font-size:16px}.search button{border:0;padding:15px 22px;background:#ff9800;color:#fff;border-radius:0 8px 8px 0;font-weight:bold}
+.container{max-width:1100px;margin:30px auto;padding:0 15px}.title{text-align:center;color:#063b78;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:15px}.card{background:#fff;padding:24px 12px;text-align:center;border-radius:12px;box-shadow:0 3px 12px #00000012}.icon{font-size:35px}.card h3{color:#063b78}
+.latest{background:#fff;border-radius:12px;box-shadow:0 3px 12px #00000012;overflow:hidden}.latest div{padding:15px;border-bottom:1px solid #eee}.latest a{color:#075ea8;text-decoration:none}
+footer{margin-top:45px;background:#062d58;color:#fff;text-align:center;padding:25px}
+@media(max-width:600px){header{justify-content:center;text-align:center;gap:12px}.hero h1{font-size:27px}nav{line-height:28px}}
+</style>
+</head>
+<body>
+<header><div class="logo">SOG <span>Shambhu</span></div>
+<nav><a href="#">Home</a><a href="#">Forms</a><a href="#">Yojana</a><a href="#">Admit Card</a><a href="#">Result</a><a href="#">Contact</a></nav></header>
+<section class="hero"><h1>Welcome to SOG Shambhu</h1><p>सरकारी फॉर्म, योजना, Admit Card और Result की जानकारी एक जगह</p>
+<div class="search"><input id="search" placeholder="फॉर्म या योजना खोजें..."><button onclick="searchSite()">Search</button></div></section>
+<section class="container"><h2 class="title">Important Categories</h2><div class="grid">
+<div class="card"><div class="icon">📋</div><h3>Online Forms</h3><p>सरकारी ऑनलाइन आवेदन</p></div>
+<div class="card"><div class="icon">🏛️</div><h3>Government Yojana</h3><p>सरकारी योजनाओं की जानकारी</p></div>
+<div class="card"><div class="icon">🎫</div><h3>Admit Card</h3><p>Latest Admit Card</p></div>
+<div class="card"><div class="icon">📊</div><h3>Results</h3><p>Latest Exam Results</p></div>
+<div class="card"><div class="icon">📢</div><h3>Latest Updates</h3><p>नई सरकारी जानकारी</p></div>
+</div></section>
+<section class="container"><h2 class="title">Latest Updates</h2><div class="latest">
+<div>🔥 <a href="#">नई सरकारी भर्ती का ऑनलाइन आवेदन शुरू</a></div>
+<div>📢 <a href="#">सरकारी योजना के लिए आवेदन करें</a></div>
+<div>🎫 <a href="#">नई परीक्षा का Admit Card जारी</a></div>
+<div>📊 <a href="#">नई परीक्षा का Result जारी</a></div>
+</div></section>
+<footer><h3>SOG Shambhu</h3><p>Online Guide | Forms | Yojana | Admit Card | Result</p><p>© 2026 SOG Shambhu</p></footer>
+<script>
+function searchSite(){let q=document.getElementById('search').value.trim();if(q) alert('आपने खोजा: '+q+'\nSearch system बाद में database से जोड़ा जा सकता है।');else alert('कृपया कुछ लिखकर Search करें।');}
+</script>
+</body></html>
